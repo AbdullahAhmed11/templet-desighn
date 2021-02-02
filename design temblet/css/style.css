@@ -1,0 +1,943 @@
+/*genral rules*/
+body {
+    font-family: lucida sans;
+
+}
+.sections{
+    padding: 20px 0;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    background: rgba(0,0,0,0.6);
+}
+.section-header .section-title {
+    font-size: 40px;
+}
+.section-header .line {
+    width: 150px;
+    background: #ddd;
+    height: 2px;
+    margin: auto;
+}
+.section-header .line  span{
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #7cb62f;
+    margin: auto;
+    position: relative;
+    bottom: 2px;
+}
+.section-header p {
+    width: 50%;
+    color: #888;
+    margin: 10px auto;
+}
+@media (max-width:767px) {
+    .section-header p {
+        
+            width: 90%;
+    }
+}
+/*    color: #7cb62f; */
+
+
+
+
+/*genral rules*/
+/*start nanvbar*/
+header {
+    height: auto;
+    padding: 10px 0;
+    position: fixed;
+    z-index: 999;
+    color: #FFF;
+    width: 100%;
+}
+.sticky {
+    background: #000;
+    color: #fff;
+}
+.sticky a {
+        color: #fff;
+
+}
+header svg {
+    position: absolute;
+    right: 30px;
+    top: 32px;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+}
+header .logo h2 {
+    font-size: 35px;
+     color: #FFF;
+}
+header nav .nav-list {
+    list-style: none;
+    margin-bottom: 0;
+    display: flex;
+}
+header nav .nav-list .list a {
+    display: block;
+    padding: 15px;
+    margin: 10px 0;
+    color: #FFF;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+header nav .nav-list .list a:hover {
+    color: #7cb62f;
+}
+@media (max-width:767px) {
+    header {
+        background: #000;
+    }
+    header nav .nav-list {
+        padding: 0;
+        display: block;
+        text-align: center;
+        display: none;
+    }
+    header .logo h2 {
+        text-align: center;
+    }
+    header svg {
+        display: block;
+    }
+}
+
+/*End nanvbar*/
+/*start home section*/
+.home {
+    height: 600px;
+    background-image: url(../images/home.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.home .home-contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.home .home-title {
+    color: #FFF;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.home .home-desc {
+    color: #ddd;
+    font-size: 18px;
+}
+.home .button {
+    background: #7cb62f;
+    color: #FFF;
+    width: 150px;
+    text-align: center;
+
+}
+@media (max-width:767px) {
+    .home .home-title {
+       font-size: 25px; 
+    }
+    .home .button {
+        margin-bottom: 10px;
+    }
+}
+
+/*end home section*/
+
+/*start section about*/
+.about .about-info h3 {
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    
+}
+.about .about-info h3  span {
+    color: #7cb62f;
+    
+}
+.about .about-info .about-info-desc {
+    line-height: 1.7;
+    color: #888;
+    margin-bottom: 10px;
+}
+.about .about-info .about-info-btn {
+    background-color:  #7cb62f;
+    padding: 10px 20px;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+}
+.about .about-image img{
+    width: 100%;
+}
+/*end section about*/
+
+/*start services section*/
+.services {
+    background: #f7f7f7;
+}
+.services .serv {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out
+}
+.services .serv svg.icon {
+    background:  #7cb62f;
+    padding: 12px;
+    color: #fff;
+        transition: all 0.3s ease-in-out
+    border-radius: 50%;
+}
+.services .serv-title {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out
+
+}
+.services .serv-desc {
+    font-size: 15px;
+    color: #888;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out
+
+}
+.services .serv:hover{
+    background:  #7cb62f;
+}
+.services .serv:hover svg.icon {
+    background: #fff;
+    color:  #7cb62f; 
+
+}
+.services .serv:hover .serv-title,
+.services .serv:hover .serv-desc{
+    color: #fff;
+}
+
+
+/*end services section*/
+/*start stat*/
+.stat {
+    height: 250px;
+    position: relative;
+}
+.stat .stat-info {
+    margin: 40px 0;
+    text-align:center;
+}
+.stat .stat-info svg.sta,
+.stat .stat-info span {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.stat .stat-info svg.sta{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    background: #7cb62f;
+    color: #fff;
+    text-align: center;
+    
+}
+.stat .stat-info span.time{
+    font-size: 20px;
+    color: 
+}
+.stat .stat-info .stat-info-title {
+    text-transform: capitalize;
+    font-size: 20px;
+    
+}
+@media(max-width: 992px) {
+    .stat {
+        height: 900px;
+    }
+}
+
+/*end stat*/
+/*portfolio*/
+
+/*start exprets*/
+.exprets {
+    padding-top: 40px;
+    background: #4c4c4c;
+}
+.exprets .section-title {
+    color: #fff;
+    
+}
+.exprets .progress-contect {
+    margin-top: 20px;
+}
+
+.exprets .progress {
+    width: 150px;
+    height: 150px;
+    background: none;
+    box-shadow: none;
+    margin: 0 auto;
+    position: relative;
+}
+.exprets .progress > span {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0; 
+    overflow: hidden;
+    z-index: 2;
+}
+.exprets .progress .progress-value {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    top: 5%;
+    left: 5%;
+    background: none;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    line-height: 135px;
+}
+.exprets .progress .progress-left {
+    left: 0;
+}
+.exprets .progress .progress-right{
+    right: 0;
+}
+.exprets .progress .progress-bar {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    background: none;
+    border-width: 10px;
+    border-style: solid;
+    
+}
+.exprets .progress.blue .progress-bar {
+    border-color: #049dff;
+}
+.exprets .progress.yellow .progress-bar {
+    border-color: #fdba04;
+}
+.exprets .progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    transform-origin: left;
+    
+}
+.exprets .progress .progress-right .progress-bar {
+    right: 100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    transform-origin: right;
+    animation: load1 1.7s linear forwards
+    
+}
+.exprets .progress.blue .progress-left .progress-bar {
+    animation: load2 1.4s linear forwards 1.7s;
+    
+}
+.exprets .progress.yellow .progress-left .progress-bar {
+    animation: load3 1s linear forwards 1.7s;
+    
+}
+@keyframes load1 {
+    
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes load2 {
+    
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(144deg);
+    }
+}
+
+@keyframes load3 {
+    
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+.exprets .title {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: bold;
+}
+/*end exprets*/
+/*start pricing*/
+.pricing {
+    background: #f7f7f7;
+}
+
+.pricing .plane {
+    text-align: center;
+    background: #fff;
+}
+.pricing .plane .plan-title {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.pricing .plane .plan-title span {
+    display: block;
+    margin-bottom: 5px;
+}
+.pricing .plane .plan-title .price {
+    font-size: 35px;
+    font-weight: bold;
+} 
+.pricing .plane .plan-title .title {
+    font-size: 15px;
+    font-weight: normal;
+} 
+.pricing .plane .pl-title {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.pricing .plane ul li {
+    padding: 10px;
+}
+.pricing .plane .plane-btn {
+    background: #252525;
+    width: 100%;
+    border: 0;
+    padding: 10px;
+    font-size: 25px;
+    color: #fff;
+      transition: all 0.3s ease-in-out;
+}
+.pricing .plane:hover{
+    position: relative;
+    top: -10px;
+}
+.pricing .plane:hover .plan-title, 
+.pricing .plane:hover .plane-btn  {
+    background: #7cb62f
+}
+/*end pricing*/
+/*team*/
+.team .team-info {
+    text-align: center;
+    
+}
+.team .team-info  .iteam-info-title{
+    margin: 5px 0;
+
+}
+.team .team-info  .iteam-info-desc {
+    display: block;
+    margin-bottom: 5px;
+}
+.team .team-info .social {
+    float: left;
+    display: inline-block;
+}
+.team .team-info .social a {
+    display: inline-block;
+    text-align: center;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+/*team*/
+/*start business*/
+.business {
+    background: #4c4c4c;
+    color: #fff;
+} 
+.business .bs-info {
+    margin: 40px 0;
+}
+.business .bs-info .bs-title {
+    font-size: 35px;
+}
+.business .bs-info .bs-desc {
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    color: #AAA;
+    margin-bottom: 10px;
+}
+.business .bs-info .bs-btn {
+    padding: 10px 20px;
+    background: #7cb62f;
+    margin-bottom: 10px;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .busines {
+        height: 400px;
+    } 
+    .business .bs-info .bs-title {
+    font-size: 25px;
+}
+    .business .bs-info .bs-desc {
+    width: 80%;
+    margin: auto;
+    font-size: 18px;
+    color: #AAA;
+    margin-bottom: 10px;
+}
+}
+/*end business*/
+/*start choose*/
+.choose {
+    background: #f7f7f7;
+}
+.choose .c-panel ul{
+    background: #333;
+    color: #fff;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+.choose .c-panel ul li {
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.choose .c-panel .contact {
+    background: #fff;
+}
+.choose .c-panel .contact .c-info {
+    border: 1px solid #888;
+    padding: 10px;
+}
+.choose .c-panel .contact .c-info img {
+    width: 40%;
+    float: left;
+    padding-right: 10px;
+}
+.choose .c-panel .contact .c-info p{
+    padding: 10px;
+    color: #888;
+    line-height: 1.5;
+}
+.choose .c-panel .contact .contact2,
+.choose .c-panel .contact .contact3 {
+    display: none;
+}
+.choose .video {
+    background: #636363;
+    padding: 130px 0;
+    text-align: center;
+    color: #fff;
+}
+.choose .video svg.icon {
+    background: #f00;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+}
+
+/*End choose*/
+/*testimonial*/
+
+.testimonial .test-info {
+    text-align: center;
+    background-color: #141414;
+       padding: 20px 10px;
+    color: #fff;
+}
+.testimonial .test-info img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin: auto;
+ 
+}
+.testimonial .test-info .test-info-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.testimonial .test-info .test-info-span {
+    color: #999;
+    display: block;
+    margin-bottom: 10px;
+
+    
+}
+
+.testimonial .test-info .test-info-desc {
+    color: #777;
+}
+/*testimonial*/
+/*blog*/
+.blog .blog-info {
+    text-align: left;
+}
+.blog .blog-info img {
+    width: 100%;
+}
+.blog .blog-info-btn {
+    border: 0;
+    width: 150px;
+    background: #7cb62f;
+    color: #fff;
+}
+.blog .blog-info-btn:hover {
+    background: #000;
+    color: #fff; ;
+}
+
+/*blog*/
+/*pleasure*/
+.pleasure {
+    background: #333;
+    color: #fff;
+    padding: 100px 0;
+}
+/*pleasure*/
+/*project*/
+.next {
+    background: #7cb62f;
+}
+.next .next-desc {
+    font-size: 25px;
+    color: #fff;
+    margin: 0;
+    margin-top: 10px
+}
+.next .next-btn {
+    background: #333;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    outline: 0;
+    border: 0;
+    
+    
+}
+
+@media (max-width: 768px) {
+    .next {
+        text-align: center;
+    }
+}
+/*project*/
+
+/*Contact us*/
+.contact {
+    background: #f7f7f7;
+}
+.contact .contact-info .contact-info-desc {
+    color: #888;
+    line-height: 1.6
+    
+}
+.contact .contact-info span {
+    display: block;
+  margin-bottom: 20px;
+}
+.contact .contact-info span svg {
+    border: 1px solid 
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-bottom: -10px;
+    margin-right: 10px;
+}
+.contact .contact-info span:hover svg {
+    background: #7cb62f;
+} 
+.contact form .form-group {
+display: flex;
+}
+.contact form input, .contact form text-area {
+    outline: 0;
+}
+.contact form .form-btn {
+    background: #7cb62f; 
+    padding: 10px 20px;
+    margin:10px auto;
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Contact us*/
+
+
+/*start footer section*/
+
+.footer {
+    background: #111;
+    color: #AAA;
+    padding-top: 20px;
+ 
+}
+.footer a {color: #AAA;}
+
+.footer a:hover {color: #FFF;}
+
+.footer h3 {
+    color: #0895D1;
+    letter-spacing: 1px;
+    margin: 30px 0 20px;
+}
+
+.footer .three-columns {
+    overflow: hidden;
+    
+}
+.footer .three-columns li {
+    width: 33.3333%;
+    float: left;
+    padding: 5px 0;
+}
+.footer .social-list {
+    overflow: hidden;
+    margin: 20px 0 10px;
+}
+.footer .social-list li {
+    float: left;
+    margin-right: 3px;
+    opacity: 0.7;
+}
+.footer .social-list li:hover {
+    opacity: 1;
+}
+.footer .copyright{
+    background: #333;
+    color: #AAA;
+    padding: 16px 0;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.footer .copyright span {
+    color: #0895D1;
+}
+/*end footer section*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/
